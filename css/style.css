@@ -1,0 +1,605 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+    background-color:#ffffff;   
+}
+
+header{
+    background-color: rgb(80, 168, 168);
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 0px 3rem 0px rgb(110,237,237);
+    z-index: 999;
+}
+
+main{
+    margin: none;
+}
+
+footer{
+    padding: 1rem;
+    background-color:rgb(0 0 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 900;
+}
+
+.bi{
+    width: 30px;
+    height: 30px;
+}
+
+.txtFooter{
+    font-size: 1.3rem;
+}
+
+.redesFooter{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    padding: 0.7rem;
+    font-size: 2.9rem;
+    margin: 1rem 0rem 0rem 1rem;
+    filter: drop-shadow(0.4rem 0.4rem 0.6rem rgb(120, 120, 120));
+}
+
+h2{
+    padding: 0.7rem;
+    font-size: 1.8rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color: black;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+b{
+    color: rgb(80, 168, 168);
+}
+
+nav ul li{
+    list-style-type: none;
+    font-size: 1.3rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    margin: 0.8rem 1rem 1rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.navgridbase{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.navgridlist{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+li a{
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+}
+
+.gridHome{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.txtHome{
+    margin: 0rem 0.7rem 0rem 0.7rem; 
+}
+
+.imgInicial{
+    max-width: 75vw;
+    max-height: 75vh;
+    filter: drop-shadow(0 0 1rem rgb(80, 168, 168));
+    z-index: 10;
+}
+.imgInicialPosition{   
+    display: flex;
+    justify-content: center;
+}
+
+.gridSobreMi{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3rem;
+}
+
+.imgSobreMi{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 1rem 1rem 3rem 0.5rem rgb(120, 120, 120)
+}
+
+.txtSobreMi{
+    margin-left: 0.2rem;
+    max-width: 95rem;
+}
+
+.gridProyectosSecciones{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.gridProyectos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+button{
+    border-radius: 1rem;
+    border: 1px solid #474747;
+}
+
+.curriculumFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem 3rem 1rem;
+    flex-wrap: wrap;
+}
+
+.curriculum{
+    min-width: 90vw;
+    max-width: 90vw;
+    box-shadow: 1rem 1rem 3rem 0.5rem rgb(120, 120, 120);
+    margin-bottom: 2rem;
+}
+
+.botonCurriculum{
+    margin-left: 1.5rem;
+}
+
+.botonDescarga{
+    background-color: #474747;
+}
+
+.botonDescarga:hover{
+    background-color: rgb(255, 255, 255);
+    border: 1px #474747 solid;
+}
+
+button a:hover{
+    color: black;
+    
+}
+
+label{
+    font-size: 1.6rem;
+    color: aliceblue;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:baseline;
+    background-color: rgb(80, 168, 168);
+    margin: 3rem 4rem 3rem 4rem;
+    max-width: 720px;
+    min-width: 320px;
+    border-radius: 4rem;
+}
+
+.itemForm{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem 2rem 3rem;
+    margin: 1rem;
+    width: 280px;
+    max-width: 280px;
+    min-width: 160px;
+}
+
+.buttonForm{
+    border-radius: 1rem;
+    border-color: none;
+    height: 3rem;
+    background-color:aliceblue;
+}
+
+.buttonForm:hover{
+    background-color:rgb(80, 168, 168);
+    color: white;
+    border: solid white 2px;
+    cursor: pointer;
+}
+
+select{
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.25rem; 
+    cursor: pointer;
+}
+
+input{
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.3rem;
+}
+
+.card{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 0.8rem;
+    margin: 0.2rem;
+    position:relative;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1rem 1rem 3rem 0.5rem rgb(120, 120, 120)
+}
+
+.detalle-card h3, .detalle-card p{
+    color: white;
+    margin: 2rem;
+    text-shadow: 1rem;
+}
+
+.fechaCard{
+    align-self: flex-end;
+}
+
+.detalle-card{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: black 0% 0% no-repeat padding-box padding-box;;
+    opacity: 0%;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.card:hover .detalle-card{
+    height: 100%;
+    opacity: 75%;
+}
+
+.details h3{
+    font-size: 1.7rem;
+    color:white;
+}
+
+.details p{
+    color: white;
+    margin: 2px;
+}
+
+@media(min-width: 480px){
+
+}
+@media(min-width: 768px){
+    
+}
+@media(min-width: 1024px){  
+    header{
+        margin-bottom: 2rem;
+        box-shadow: 0px 0px 3rem 0px rgb(110,237,237);
+    }
+
+    main{
+        min-height: 75vh;
+    }
+
+    footer{
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .txtFooter{
+        font-size: 2rem;
+    }
+       
+    .redesFooter{
+        display: flex;
+        justify-content: center;
+    }
+    
+    svg{
+        height: 50px;
+        width: 50px;
+    }
+
+    h1{
+        padding: 0.7rem;
+        font-size: 4rem;
+        margin: 1rem 0rem 0rem 5rem;
+    }
+   
+    h2{
+        padding: 0.7rem;
+        font-size: 2.2rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+       
+    h3{
+        font-size: 1.8rem;
+    }
+       
+    p{
+        font-size: 1.4rem;
+    }
+  
+    nav ul li{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+       
+    a{
+        padding: 1rem;
+        margin: 2rem 2rem 2rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+       
+    .icon{
+        height: 50px;
+        width: 50px;
+    }
+       
+    .navgridbase{
+        display: grid;
+        grid-template-columns: 25% 1fr;
+    }
+       
+    .navgridlist{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+       
+    li a{
+        display: flex;
+        justify-content: flex-start;
+        justify-items: center;
+    }
+       
+    .txtHome{
+        margin: 5rem 10rem 0rem 10rem;; 
+    }
+
+   .imgproject{
+        height: 50rem;
+        width: 50rem;
+        border-radius: 2rem;
+        margin: 3rem;
+        box-shadow: 0.5rem 1rem 1rem 0.5rem rgb(146, 146, 146);
+    }
+       
+    button{
+        border-radius: 1rem;
+        border: 1px solid #474747;
+    }
+       
+    .botonDescarga{
+        background-color: #474747;
+    }
+       
+    .botonDescarga:hover{
+        background-color: rgb(255, 255, 255);
+        border: 1px #474747 solid;
+    }
+       
+    button a:hover{
+        color: black;
+    }
+       
+    label{
+        font-size: 1.6rem;
+        color: aliceblue;
+    }
+       
+    article{
+        display: flex;
+        justify-content: center;
+    }
+       
+    .formulario{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:baseline;
+        background-color: rgb(80, 168, 168);
+        margin: 3rem 4rem 3rem 4rem;
+        max-width: 720px;
+        min-width: 320px;
+        border-radius: 4rem;
+    }
+       
+    .itemForm{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 3rem 2rem 3rem;
+        margin: 1rem;
+        width: 280px;
+        max-width: 280px;
+        min-width: 160px;
+    }
+       
+    .buttonForm{
+        border-radius: 1rem;
+        border-color: none;
+        height: 3rem;
+        background-color:aliceblue;
+    }
+       
+    .buttonForm:hover{
+        background-color:rgb(80, 168, 168);
+        color: white;
+        border: solid white 2px;
+        cursor: pointer;
+        }
+       
+    select{
+        border-radius: 0.5rem;
+        border: none;
+        padding: 0.25rem; 
+        cursor: pointer;
+    }
+       
+    input{
+        border-radius: 0.5rem;
+        border: none;
+        padding: 0.3rem;
+    }
+       
+    .curriculumFlex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 10rem 1rem 10rem;
+    }
+
+    .curriculum{
+        min-width: 15vw;
+        max-width: 25vw;
+        box-shadow: 1rem 1rem 3rem 0.5rem rgb(120, 120, 120)
+    }
+       
+    .imgSobreMi{
+        width: 30rem;
+        height: 30rem;
+        border-radius: 2rem;
+        margin: 2rem;
+    }
+       
+    .txtSobreMi{
+        margin-left: 2rem;
+        max-width: 95rem;
+    }
+       
+    .gridHome{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+   
+    .imgInicial{
+        max-width: 90vw;
+        max-height: 90vh;
+        display: flex;
+        justify-content: flex-end;
+    }   
+    
+    .bi{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .card{
+        width: 35rem;
+        height: 35rem;
+        border-radius: 4rem;
+        margin: 1rem;
+        position:relative;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .detalle-card h3, .detalle-card p{
+        color: white;
+        margin: 2rem;
+        text-shadow: 1rem;
+    }
+    
+    .fechaCard{
+        align-self: flex-end;
+    }
+    
+    .detalle-card{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        bottom: 0;
+        width: 100%;
+        height: 0%;
+        background: black 0% 0% no-repeat padding-box padding-box;;
+        opacity: 0%;
+        transition: 0.5s ease;
+        overflow: hidden;
+        backdrop-filter: blur(20px);
+    }
+    
+    .card:hover .detalle-card{
+        height: 100%;
+        opacity: 75%;
+    }
+    
+    .details h3{
+        font-size: 1.7rem;
+        color:white;
+    }
+    
+    .details p{
+        color: white;
+        margin: 2px;
+    }
+    
+    .gridProyectos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
