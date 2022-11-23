@@ -188,7 +188,7 @@ li a{
 .gridProyectos{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
     margin-bottom: 4rem;
     justify-self: center;
 }
@@ -196,7 +196,7 @@ li a{
 .card{
     width: 25rem;
     height: 25rem;
-    border-radius: 0.8rem;
+    border-radius: 2rem;
     margin: 0.2rem;
     position:relative;
     background-position:center;
@@ -284,7 +284,7 @@ button a:hover{
     color: black;
 }
 
-/* CLASES PAGE - SOBRE MI */
+/* CLASES PAGE - CONTACTO */
 
 label{
     font-size: 1.6rem;
@@ -581,6 +581,13 @@ input{
 
     /* CLASES PAGE - PROYECTOS */
 
+    .gridProyectos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     .card{
         width: 35rem;
         height: 35rem;
@@ -591,10 +598,6 @@ input{
     .detalle-card h3, .detalle-card p{
         margin: 2rem;
         text-shadow: 1rem;
-    }
-
-    .gridProyectos{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     /* CLASES PAGE - CURRICULUM */
