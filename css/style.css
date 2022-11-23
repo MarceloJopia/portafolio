@@ -1,700 +1,583 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-html{
-    font-size: 62.5%;
-    font-family: 'Space Mono', monospace;
+html {
+  font-size: 62.5%;
+  font-family: "Space Mono", monospace;
 }
 
-body{
-    background-color:#ffffff;   
+body {
+  background-color: #ffffff;
 }
 
-header{
-    background-color: rgb(80, 168, 168);
-    margin-bottom: 2rem;
-    position: sticky;
-    top: 0px;
-    box-shadow: 0px 0px 3rem 0px rgb(110,237,237);
-    z-index: 999;
+header {
+  background-color: rgb(80, 168, 168);
+  margin-bottom: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 0px 3rem 0px rgb(110, 237, 237);
+  z-index: 999;
 }
 
-main{
-    margin: none;
+main {
+  margin: none;
 }
 
-footer{
-    padding: 1rem;
-    background-color:rgb(0 0 0);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 900;
+footer {
+  padding: 1rem;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 90;
 }
 
-.bi{
-    width: 30px;
-    height: 30px;
+.bi {
+  width: 30px;
+  height: 30px;
 }
 
-.txtFooter{
-    font-size: 1.3rem;
+.txtFooter {
+  font-size: 1.3rem;
 }
 
-.redesFooter{
-    display: flex;
-    justify-content: center;
+.redesFooter {
+  display: flex;
+  justify-content: center;
 }
 
-h1{
-    padding: 0.7rem;
-    font-size: 2.9rem;
-    margin: 1rem 0rem 0rem 1rem;
-    filter: drop-shadow(0.4rem 0.4rem 0.6rem rgb(120, 120, 120));
+h1 {
+  padding: 0.7rem;
+  font-size: 2.9rem;
+  margin: 1rem 0rem 0rem 1rem;
+  filter: drop-shadow(0.4rem 0.4rem 0.6rem rgb(120, 120, 120));
 }
 
-h2{
-    padding: 0.7rem;
-    font-size: 1.8rem;
-    margin: 1rem 0rem 1rem 0rem;
+h2 {
+  padding: 0.7rem;
+  font-size: 1.8rem;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
-h3{
-    font-size: 1.3rem;
+h3 {
+  font-size: 1.3rem;
 }
 
-h1,h2,h3,h4,h5,h6,p{
-    color: black;
+h1, h2, h3, h4, h5, h6, p {
+  color: black;
 }
 
-p{
-    font-size: 0.9rem;
+p {
+  font-size: 0.9rem;
 }
 
-b{
-    color: rgb(80, 168, 168);
+b {
+  color: rgb(80, 168, 168);
 }
 
-nav ul li{
-    list-style-type: none;
-    font-size: 1.3rem;
-    padding-bottom: 0.2rem;
-    padding-top: 0.2rem;
+nav ul li {
+  list-style-type: none;
+  font-size: 1.3rem;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-    margin: 0.8rem 1rem 1rem 0.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  margin: 0.8rem 1rem 1rem 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon{
-    height: 50px;
-    width: 50px;
+.icon {
+  height: 50px;
+  width: 50px;
 }
 
-.navgridbase{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 3%;
-    margin-right: 3%;
+.navgridbase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.navgridlist{
-    display: grid;
-    grid-template-columns: 1fr;
+.navgridlist {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-nav a{
-    display: flex;
-    justify-content: flex-start;
+nav a {
+  display: flex;
+  justify-content: flex-start;
 }
 
-li a{
-    display: flex;
-    justify-content: flex-end;
-    justify-items: center;
+li a {
+  display: flex;
+  justify-content: flex-end;
+  justify-items: center;
 }
 
 /* CLASES HOME */
-
-.gridHome{
-    display: grid;
-    grid-template-columns: 1fr;
+.gridHome {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.txtHome{
-    margin: 0rem 0.7rem 0rem 0.7rem; 
+.txtHome {
+  margin: 0rem 0.7rem 0rem 0.7rem;
 }
 
-.imgInicial{
-    max-width: 75vw;
-    max-height: 75vh;
-    filter: drop-shadow(0 0 1rem rgb(80, 168, 168));
-    position: relative;
-    z-index: 10;
+.imgInicial {
+  max-width: 75vw;
+  max-height: 75vh;
+  filter: drop-shadow(0 0 1rem rgb(80, 168, 168));
+  position: relative;
+  z-index: 10;
 }
-.imgInicialPosition{   
-    display: flex;
-    justify-content: center;
+
+.imgInicialPosition {
+  display: flex;
+  justify-content: center;
 }
 
 /* CLASES PAGE - SOBRE MI */
-
-.gridSobreMi{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 3rem;
+.gridSobreMi {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3rem;
+  justify-self: center;
 }
 
-.imgSobreMi{
-    width: 20rem;
-    height: 20rem;
-    border-radius: 1rem;
-    margin: 1rem;
-    box-shadow: 1rem 1rem 3rem 0.5rem rgb(120, 120, 120)
+.imgSobreMi {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 0.8rem;
+  margin: 0.2rem;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1rem 1rem 3rem 0.5rem rgb(120, 120, 120);
+  justify-self: center;
 }
 
-.txtSobreMi{
-    margin-left: 0.2rem;
-    max-width: 95rem;
+.txtSobreMi {
+  margin-left: 0.2rem;
+  max-width: 30rem;
 }
 
 /* CLASES PAGE - PROYECTOS */
-
-.gridProyectosSecciones{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 3%;
-    margin-right: 3%;
+.gridProyectosSecciones {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.gridProyectos{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    margin-bottom: 4rem;
-    justify-self: center;
+.gridProyectos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  justify-self: center;
 }
 
-.card{
-    width: 25rem;
-    height: 25rem;
-    border-radius: 0.8rem;
-    margin: 0.2rem;
-    position:relative;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 1rem 1rem 3rem 0.5rem rgb(120, 120, 120);
+.card {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 0.8rem;
+  margin: 0.2rem;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 1rem 1rem 3rem 0.5rem rgb(120, 120, 120);
 }
 
-.detalle-card h3, .detalle-card p{
-    color: white;
-    margin: 2rem;
-    text-shadow: 1rem;
+.detalle-card h3, .detalle-card p {
+  color: white;
+  margin: 2rem;
+  text-shadow: 1rem;
 }
 
-.fechaCard{
-    align-self: flex-end;
+.fechaCard {
+  align-self: flex-end;
 }
 
-.detalle-card{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    bottom: 0;
-    width: 100%;
-    height: 0%;
-    background: black;
-    opacity: 0%;
-    transition: 0.5s ease;
-    overflow: hidden;
+.detalle-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: black;
+  opacity: 0%;
+  transition: 0.5s ease;
+  overflow: hidden;
 }
 
-.card:hover .detalle-card{
-    height: 100%;
-    opacity: 75%;
+.card:hover .detalle-card {
+  height: 100%;
+  opacity: 75%;
 }
 
 /* CLASES PAGE - CURRICULUM */
-
-button{
-    border-radius: 1rem;
-    border: 1px solid #474747;
+button {
+  border-radius: 1rem;
+  border: 1px solid #474747;
 }
 
-.curriculumFlex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 1rem 2rem 1rem;
-    flex-wrap: wrap;
+.curriculumFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 1rem 2rem 1rem;
+  flex-wrap: wrap;
 }
 
-.curriculum{
-    min-width: 90vw;
-    max-width: 90vw;
-    box-shadow: 1rem 1rem 3rem 0.5rem rgb(120, 120, 120);
-    margin-bottom: 2rem;
+.curriculum {
+  min-width: 90vw;
+  max-width: 90vw;
+  box-shadow: 1rem 1rem 3rem 0.5rem rgb(120, 120, 120);
+  margin-bottom: 2rem;
 }
 
-.botonCurriculum{
-    margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.botonCurriculum {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.botonCurriculum p{
-    text-align: center ;
+.botonCurriculum p {
+  text-align: center;
 }
 
-.botonDescarga{
-    background-color: #474747;
-    margin-top: 1.5rem;
+.botonDescarga {
+  background-color: #474747;
+  margin-top: 1.5rem;
 }
 
-.botonDescarga:hover{
-    background-color: rgb(255, 255, 255);
-    border: 1px #474747 solid;
+.botonDescarga:hover {
+  background-color: rgb(255, 255, 255);
+  border: 1px #474747 solid;
 }
 
-button a:hover{
-    color: black;
+button a:hover {
+  color: black;
 }
 
 /* CLASES PAGE - SOBRE MI */
+label {
+  font-size: 1.6rem;
+  color: aliceblue;
+}
 
-label{
+.formularioFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  background-color: rgb(80, 168, 168);
+  margin: 3rem 4rem 3rem 4rem;
+  max-width: 720px;
+  min-width: 320px;
+  border-radius: 4rem;
+}
+
+.itemForm {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem 2rem 3rem;
+  margin: 1rem;
+  width: 280px;
+  max-width: 280px;
+  min-width: 160px;
+}
+
+.buttonForm {
+  border-radius: 1rem;
+  border-color: none;
+  height: 3rem;
+  background-color: aliceblue;
+}
+
+.buttonForm:hover {
+  background-color: rgb(80, 168, 168);
+  color: white;
+  border: solid white 2px;
+  cursor: pointer;
+}
+
+select {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+input {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.3rem;
+}
+
+@media (min-width: 576px) {
+  .bi {
+    width: 40px;
+    height: 40px;
+  }
+  .txtFooter {
     font-size: 1.6rem;
-    color: aliceblue;
+  }
+  h1 {
+    font-size: 3.3rem;
+    margin: 1rem 1rem 0rem 1rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  nav ul li {
+    font-size: 1.5rem;
+  }
+  a {
+    padding: 1rem;
+    margin: 1.2rem 1.2rem 1.2rem 1.2rem;
+  }
+  .navgridlist {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  li a {
+    justify-content: flex-end;
+  }
+  /* CLASES HOME */
+  .txtHome {
+    margin: 0rem 1.5rem 0rem 1.5rem;
+  }
+  /* CLASES PAGE - CURRICULUM */
+  .botonCurriculum {
+    margin: 1.5rem;
+  }
+  .botonDescarga {
+    margin: 2rem 2rem 0rem 2rem;
+    padding: 1rem;
+  }
 }
-
-.formularioFlex{
-    display: flex;
+@media (min-width: 768px) {
+  .bi {
+    width: 45px;
+    height: 45px;
+  }
+  .txtFooter {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  nav ul li {
+    font-size: 1.7rem;
+  }
+  a {
+    padding: 1rem;
+    margin: 1.2rem 1.2rem 1.2rem 1.2rem;
+  }
+  .navgridbase {
+    grid-template-columns: 11% 1fr;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .navgridlist {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  li a {
     justify-content: center;
+    height: 50px;
+  }
+  /* CLASES HOME */
+  .txtHome {
+    margin: 4rem 1.5rem 4rem 1.5rem;
+  }
+  /* CLASES PAGE - CURRICULUM */
+  .botonCurriculum {
+    max-width: 500px;
+    margin: 2rem 2rem 1rem 2rem;
+  }
+  .botonDescarga {
+    margin: 2rem 4rem 0rem 4rem;
+  }
 }
-
-.formulario{
+@media (min-width: 992px) {
+  .txtFooter {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+    margin: 1rem 0rem 0rem 5rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  nav ul li {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  a {
+    padding: 1rem;
+    margin: 2rem 2rem 2rem 2rem;
+  }
+  .icon {
+    height: 50px;
+    width: 50px;
+  }
+  .bi {
+    width: 50px;
+    height: 50px;
+  }
+  .navgridbase {
+    grid-template-columns: 20% 1fr;
+  }
+  nav a {
+    justify-content: center;
+  }
+  li a {
+    justify-content: flex-start;
+  }
+  /* CLASES HOME */
+  .gridHome {
+    grid-template-columns: 1fr 1fr;
+  }
+  .imgInicial {
+    max-width: 90vw;
+    max-height: 90vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:baseline;
-    background-color: rgb(80, 168, 168);
+    justify-content: flex-end;
+  }
+  .txtHome {
+    margin: 10rem 5rem 0rem 5rem;
+  }
+  /* CLASES PAGE - SOBRE MI */
+  .gridSobreMi {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .contenidoIzq {
+    justify-self: flex-end;
+  }
+  .contenidoDer {
+    justify-self: flex-start;
+  }
+  .imgSobreMi {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 2rem;
+    margin: 2rem;
+  }
+  .txtSobreMi {
+    margin-left: 2rem;
+    max-width: 70rem;
+  }
+  /* CLASES PAGE - PROYECTOS */
+  .card {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 4rem;
+    margin: 1rem;
+  }
+  .detalle-card h3, .detalle-card p {
+    margin: 2rem;
+    text-shadow: 1rem;
+  }
+  .gridProyectos {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  /* CLASES PAGE - CURRICULUM */
+  .curriculumFlex {
+    margin: 1rem 5rem 1rem 5rem;
+  }
+  .curriculum {
+    min-width: 15vw;
+    max-width: 35vw;
+  }
+  .botonCurriculum {
+    display: block;
+    max-width: 50vw;
+  }
+  .botonCurriculum p {
+    margin-left: 2rem;
+  }
+  .botonDescarga {
+    margin: 2rem 2rem 0rem 2rem;
+  }
+  /* CLASES PAGE - CONTACTO */
+  label {
+    font-size: 1.6rem;
+  }
+  .formulario {
     margin: 3rem 4rem 3rem 4rem;
     max-width: 720px;
     min-width: 320px;
     border-radius: 4rem;
-}
-
-.itemForm{
-    display: flex;
-    flex-direction: column;
+  }
+  .itemForm {
     padding: 2rem 3rem 2rem 3rem;
     margin: 1rem;
     width: 280px;
     max-width: 280px;
     min-width: 160px;
-}
-
-.buttonForm{
+  }
+  .buttonForm {
     border-radius: 1rem;
-    border-color: none;
     height: 3rem;
-    background-color:aliceblue;
-}
-
-.buttonForm:hover{
-    background-color:rgb(80, 168, 168);
-    color: white;
-    border: solid white 2px;
-    cursor: pointer;
-}
-
-select{
+  }
+  select {
     border-radius: 0.5rem;
-    border: none;
-    padding: 0.25rem; 
-    cursor: pointer;
-}
-
-input{
+    padding: 0.25rem;
+  }
+  input {
     border-radius: 0.5rem;
-    border: none;
     padding: 0.3rem;
-}
-
-
-@media(min-width: 576px){  
-    .bi{
-        width: 40px;
-        height: 40px;
-    }
-    
-    .txtFooter{
-        font-size: 1.6rem;
-    }
-
-    h1{
-        font-size: 3.3rem;
-        margin: 1rem 1rem 0rem 1rem;
-    }
-    
-    h2{
-        font-size: 2.1rem;
-        margin: 1rem 0rem 1rem 0rem;
-    }
-    
-    h3{
-        font-size: 1.4rem;
-    }
-
-    p{
-        font-size: 1.0rem;
-    }
-
-    nav ul li{
-        font-size: 1.5rem;
-    }
-    
-    a{
-        padding: 1rem;
-        margin: 1.2rem 1.2rem 1.2rem 1.2rem;
-    }
-
-    .navgridlist{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    
-    li a{
-        justify-content: flex-end;
-    }
-    
-    /* CLASES HOME */
-    
-    .txtHome{
-        margin: 0rem 1.5rem 0rem 1.5rem; 
-    }
-
-    /* CLASES PAGE - CURRICULUM */
-
-
-    .botonCurriculum{
-        margin: 1.5rem;
-    }
-    .botonDescarga{
-        margin: 2rem 2rem 0rem 2rem;
-        padding: 1rem;
-    }
-
-}
-
-@media(min-width: 768px){
-    .bi{
-        width: 45px;
-        height: 45px;
-    }
-    
-    .txtFooter{
-        font-size: 1.8rem;
-    }
-
-    h1{
-        font-size: 3.6rem;
-    }
-    
-    h2{
-        font-size: 2.4rem;
-    }
-    
-    h3{
-        font-size: 1.6rem;
-    }
-
-    p{
-        font-size: 1.2rem;
-    }
-
-    nav ul li{
-        font-size: 1.7rem;
-    }
-    
-    a{
-        padding: 1rem;
-        margin: 1.2rem 1.2rem 1.2rem 1.2rem;
-    }
-
-    .navgridbase{
-        grid-template-columns: 11% 1fr;
-        margin-left: 1%;
-        margin-right: 1%;
-    }
-
-    .navgridlist{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    
-    li a{
-        justify-content: center;
-        height: 50px;
-    }
-       
-    /* CLASES HOME */
-    
-    .txtHome{
-        margin: 4rem 1.5rem 4rem 1.5rem; 
-    }  
-
-    /* CLASES PAGE - CURRICULUM */
-
-    .botonCurriculum{
-        max-width: 500px;
-        margin: 2rem 2rem 1rem 2rem;
-    }
-
-    .botonDescarga{
-        margin: 2rem 4rem 0rem 4rem;
-    }
-
-}
-
-@media(min-width: 992px){  
-    .txtFooter{
-        font-size: 2rem;
-    }
-
-    h1{
-        font-size: 4rem;
-        margin: 1rem 0rem 0rem 5rem;
-    }
-   
-    h2{
-        font-size: 2.6rem;
-    }
-       
-    h3{
-        font-size: 1.8rem;
-    }
-       
-    p{
-        font-size: 1.4rem;
-    }
-  
-    nav ul li{
-        font-size: 2rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-    }
-       
-    a{
-        padding: 1rem;
-        margin: 2rem 2rem 2rem 2rem;
-    }
-       
-    .icon{
-        height: 50px;
-        width: 50px;
-    }
-        
-    .bi{
-        width: 50px;
-        height: 50px;
-    }
-
-    .navgridbase{
-        grid-template-columns: 20% 1fr;
-    }
-
-    nav a{
-        justify-content: center;
-    }
-
-    li a{
-        justify-content: flex-start;
-    }
-    
-    /* CLASES HOME */
-
-    .gridHome{
-        grid-template-columns: 1fr 1fr;
-    }
-   
-    .imgInicial{
-        max-width: 90vw;
-        max-height: 90vh;
-        display: flex;
-        justify-content: flex-end;
-    }   
-
-    .txtHome{
-        margin: 10rem 5rem 0rem 5rem;; 
-    }
-
-    /* CLASES PAGE - SOBRE MI */
-
-    .imgSobreMi{
-        width: 30rem;
-        height: 30rem;
-        border-radius: 2rem;
-        margin: 2rem;
-    }
-       
-    .txtSobreMi{
-        margin-left: 2rem;
-        max-width: 95rem;
-    }
-
-
-    /* CLASES PAGE - PROYECTOS */
-
-    .card{
-        width: 35rem;
-        height: 35rem;
-        border-radius: 4rem;
-        margin: 1rem;
-        position:relative;
-        background-position:center;
-        background-repeat: no-repeat;
-        background-size:cover;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    
-    .detalle-card h3, .detalle-card p{
-        color: white;
-        margin: 2rem;
-        text-shadow: 1rem;
-    }
-
-    .fechaCard{
-        align-self: flex-end;
-    }
-    
-    .detalle-card{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        bottom: 0;
-        width: 100%;
-        height: 0%;
-        background: black;
-        opacity: 0%;
-        transition: 0.5s ease;
-        overflow: hidden;
-    }
-    
-    .card:hover .detalle-card{
-        height: 100%;
-        opacity: 75%;
-    }
-
-    .gridProyectos{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    /* CLASES PAGE - CURRICULUM */
-
-    .curriculumFlex{
-        margin: 1rem 5rem 1rem 5rem;
-    }
-
-    .curriculum{
-        min-width: 15vw;
-        max-width: 35vw;
-    }
-
-    .botonCurriculum{
-        display: block;
-        max-width: 50vw;
-    }
-
-    .botonCurriculum p{
-        margin-left: 2rem;
-    }
-
-    .botonDescarga{
-        margin: 2rem 2rem 0rem 2rem;
-    }
-
-    .botonDescarga{
-        background-color: #474747;
-    }
-
-    /* CLASES PAGE - CONTACTO */  
-
-    label{
-        font-size: 1.6rem;
-    }
-       
-    .formularioFlex{
-        display: flex;
-        justify-content: center;
-    }
-       
-    .formulario{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:baseline;
-        background-color: rgb(80, 168, 168);
-        margin: 3rem 4rem 3rem 4rem;
-        max-width: 720px;
-        min-width: 320px;
-        border-radius: 4rem;
-    }
-       
-    .itemForm{
-        display: flex;
-        flex-direction: column;
-        padding: 2rem 3rem 2rem 3rem;
-        margin: 1rem;
-        width: 280px;
-        max-width: 280px;
-        min-width: 160px;
-    }
-       
-    .buttonForm{
-        border-radius: 1rem;
-        border-color: none;
-        height: 3rem;
-        background-color:aliceblue;
-    }
-       
-    .buttonForm:hover{
-        background-color:rgb(80, 168, 168);
-        color: white;
-        border: solid white 2px;
-        cursor: pointer;
-        }
-       
-    select{
-        border-radius: 0.5rem;
-        border: none;
-        padding: 0.25rem; 
-        cursor: pointer;
-    }
-       
-    input{
-        border-radius: 0.5rem;
-        border: none;
-        padding: 0.3rem;
-    }
-              
-}
+  }
+}/*# sourceMappingURL=style.css.map */
