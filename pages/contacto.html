@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -26,7 +27,6 @@
                 </li>
                 <li>
                     <a href="./proyectos.html">Proyectos</a>
-                    <!-- Aqui falta agregar 2 sub opciones -->
                 </li>
                 <li>
                     <a href="./curriculum.html">Curriculum</a>
@@ -42,19 +42,19 @@
         <section>
             <article class="formularioFlex">
                 <form action="" class="formulario">
-                    <div class="itemForm">
+                    <div class="itemForm nombreForm">
                         <label for="nombreApellido">Nombre y Apellido</label>
                         <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Ejemplo: Marcelo Jopia" required>
                     </div>
-                    <div class="itemForm">
+                    <div class="itemForm celularForm">
                         <label for="numeroCelular">Celular</label>
                         <input type="tel" id="numeroCelular" placeholder="Ejemplo: +56900000000" required>
                     </div>
-                    <div class="itemForm">
+                    <div class="itemForm correoForm">
                         <label for="email">Correo Electronico</label>
                         <input type="email" id="email" placeholder="Ejemplo: mail@mail.com" required>
                     </div>
-                    <div class="itemForm">
+                    <div class="itemForm servicioForm">
                         <label for="area">Servicio de Interes</label>
                         <select name="area" id="area">
                             <option value="desarrolloFrontEnd">Desarrollo Frontend</option>
@@ -62,15 +62,15 @@
                             <option value="otro">Otros</option>
                         </select>
                     </div>
-                    <div class="itemForm" style="width: 650px; max-width: 650px; min-width: 240px;">
+                    <div class="itemForm comentarioForm">
                         <label for="comentario">Comentario</label>
                         <textarea name="comentario" id="" cols="30" rows="10" style="resize:none; border-radius: 1rem; padding: 0.3rem;" placeholder="Si quieres agregar algo, escribe aquí."></textarea>
                     </div>
-                    <div  class="itemForm" style="flex-direction:row; width: 650px; max-width: 650px; min-width: 240px; justify-content: center;">
+                    <div  class="itemForm checkForm" style="flex-direction:row; width: 650px; max-width: 650px; min-width: 240px; justify-content: center;">
                         <input type="checkbox" id="check" style="margin:0px 5px 0px 5px;" required checked>
                         <label for="check" >Acepto ser comunicado atraves de estos datos</label>
                     </div>
-                    <div class="itemForm" style="width: 650px; max-width: 650px;">
+                    <div class="itemForm buttonFormArea" style="width: 650px; max-width: 650px;">
                         <input type="submit" value="Enviar" class="buttonForm">
                     </div>
                 </form>
@@ -105,6 +105,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 

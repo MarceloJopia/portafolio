@@ -5,7 +5,6 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Space Mono", monospace;
 }
 
 body {
@@ -15,7 +14,6 @@ body {
 header {
   background-color: rgb(80, 168, 168);
   margin-bottom: 2rem;
-  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   box-shadow: 0px 0px 3rem 0px rgb(110, 237, 237);
@@ -67,8 +65,16 @@ h3 {
   font-size: 1.3rem;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,h2,h3,p,label,input,a{
+  font-family: "Space Mono", monospace;
+}
+
+h1, h2, h3, p {
   color: black;
+}
+
+h1, h2, h3{
+  font-weight: bold;
 }
 
 p {
@@ -288,15 +294,65 @@ label {
   color: aliceblue;
 }
 
+input {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.3rem;
+}
+
+select {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+textarea {
+  width: 250%;
+}
+
 .formularioFlex {
   display: flex;
   justify-content: center;
 }
 
+.nombreForm {
+  grid-area: nombre;
+}
+
+.celularForm {
+  grid-area: celular;
+}
+
+.correoForm {
+  grid-area: correo;
+}
+
+.servicioForm {
+  grid-area: servicio;
+}
+
+.comentarioForm {
+  grid-area: comentario;
+}
+
+.checkForm {
+  grid-area: check;
+}
+
+.buttonFormArea {
+  grid-area: boton;
+}
+
 .formulario {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: baseline;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "nombre celular"
+  "correo servicio"
+  "comentario comentario"
+  "check check"
+  "boton boton";
   background-color: rgb(80, 168, 168);
   margin: 3rem 4rem 3rem 4rem;
   max-width: 720px;
@@ -309,36 +365,6 @@ label {
   flex-direction: column;
   padding: 2rem 3rem 2rem 3rem;
   margin: 1rem;
-  width: 280px;
-  max-width: 280px;
-  min-width: 160px;
-}
-
-.buttonForm {
-  border-radius: 1rem;
-  border-color: none;
-  height: 3rem;
-  background-color: aliceblue;
-}
-
-.buttonForm:hover {
-  background-color: rgb(80, 168, 168);
-  color: white;
-  border: solid white 2px;
-  cursor: pointer;
-}
-
-select {
-  border-radius: 0.5rem;
-  border: none;
-  padding: 0.25rem;
-  cursor: pointer;
-}
-
-input {
-  border-radius: 0.5rem;
-  border: none;
-  padding: 0.3rem;
 }
 
 @media (min-width: 576px) {
@@ -382,12 +408,16 @@ input {
     margin: 0rem 1.5rem 0rem 1.5rem;
   }
   /* CLASES PAGE - CURRICULUM */
+  
   .botonCurriculum {
+    flex-direction: column;
     margin: 1.5rem;
+    align-items: center;
   }
   .botonDescarga {
     margin: 2rem 2rem 0rem 2rem;
     padding: 1rem;
+    max-width: fit-content;
   }
 }
 @media (min-width: 768px) {
@@ -434,7 +464,9 @@ input {
     margin: 4rem 1.5rem 4rem 1.5rem;
   }
   /* CLASES PAGE - CURRICULUM */
+
   .botonCurriculum {
+    flex-direction: row;
     max-width: 500px;
     margin: 2rem 2rem 1rem 2rem;
   }
