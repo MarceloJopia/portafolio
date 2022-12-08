@@ -154,9 +154,28 @@ li a {
 }
 
 /* CLASES PAGE - SOBRE MI */
+.txtUno{
+  grid-area: txtUno;
+}
+
+.txtDos{
+  grid-area: txtDos;
+}
+
+.imgUno{
+  grid-area: imgUno;
+}
+
+.imgDos{
+  grid-area: imgDos;
+}
+
 .gridSobreMi {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-areas: "txtUno"
+  "imgUno"
+  "txtDos"
+  "imgDos";
   gap: 3rem;
   margin-left: 5%;
   margin-right: 5%;
@@ -179,7 +198,8 @@ li a {
 
 .txtSobreMi {
   margin-left: 0.2rem;
-  max-width: 30rem;
+  min-width: 30rem;
+  text-align: justify;
 }
 
 /* CLASES PAGE - PROYECTOS */
@@ -289,15 +309,17 @@ button a:hover {
 }
 
 /* CLASES PAGE - CONTACTO */
+
 label {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: aliceblue;
 }
 
-input {
+input,select,textarea {
   border-radius: 0.5rem;
   border: none;
   padding: 0.3rem;
+  font-size: 0.9rem;
 }
 
 select {
@@ -305,10 +327,6 @@ select {
   border: none;
   padding: 0.25rem;
   cursor: pointer;
-}
-
-textarea {
-  width: 250%;
 }
 
 .formularioFlex {
@@ -336,8 +354,16 @@ textarea {
   grid-area: comentario;
 }
 
+.itemForm {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem 1rem 3rem;
+  margin: 1.5rem;
+}
+
 .checkForm {
   grid-area: check;
+  text-align: center;
 }
 
 .buttonFormArea {
@@ -346,26 +372,32 @@ textarea {
 
 .formulario {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "nombre celular"
-  "correo servicio"
-  "comentario comentario"
-  "check check"
-  "boton boton";
+  "nombre"
+  "celular"
+  "correo"
+  "servicio"
+  "comentario"
+  "check"
+  "boton";
   background-color: rgb(80, 168, 168);
   margin: 3rem 4rem 3rem 4rem;
-  max-width: 720px;
-  min-width: 320px;
   border-radius: 4rem;
 }
 
-.itemForm {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 3rem 2rem 3rem;
-  margin: 1rem;
+.buttonForm {
+  border-radius: 1rem;
+  height: 3rem;
 }
+
+.buttonForm:active{
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: aliceblue;
+  border: 1px;
+  box-shadow: 0rem 0rem 1rem 0.5rem aliceblue;
+  color:aliceblue;
+}
+
 
 @media (min-width: 576px) {
   .bi {
@@ -407,6 +439,29 @@ textarea {
   .txtHome {
     margin: 0rem 1.5rem 0rem 1.5rem;
   }
+
+  /* CLASES PAGE - SOBRE MI */
+  .gridSobreMi {
+    margin-top: 2rem;
+  }
+  .imgSobreMi {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 2rem;
+    margin: 1rem;
+  }
+  .txtSobreMi {
+    margin-left: 1rem;
+    max-width: 70rem;
+  }
+
+  /* CLASES PAGE - PROYECTOS */
+
+  .card {
+    width: 25rem;
+    height: 25rem;
+  }
+
   /* CLASES PAGE - CURRICULUM */
   
   .botonCurriculum {
@@ -419,7 +474,18 @@ textarea {
     padding: 1rem;
     max-width: fit-content;
   }
+  /* CLASES PAGE - CONTACTO */
+
+  label {
+    font-size: 1.4rem;
+  }
+
+  input,select,textarea {
+    font-size: 1.0rem;
+  }
 }
+
+
 @media (min-width: 768px) {
   .bi {
     width: 45px;
@@ -463,6 +529,39 @@ textarea {
   .txtHome {
     margin: 4rem 1.5rem 4rem 1.5rem;
   }
+
+  /* CLASES PAGE - SOBRE MI */
+  .gridSobreMi {
+    grid-template-areas: "txtUno imgUno"
+    "imgDos txtDos";
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .contenidoIzq {
+    justify-self: flex-end;
+  }
+  .contenidoDer {
+    justify-self: flex-start;
+    align-self: flex-end;
+  }
+  .imgSobreMi {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 2rem;
+    margin: 1rem;
+  }
+  .txtSobreMi {
+    margin-left: 1rem;
+    max-width: 70rem;
+  }
+
+  /* CLASES PAGE - PROYECTOS */
+
+  .card {
+    width: 33rem;
+    height: 33rem;
+  }
+
   /* CLASES PAGE - CURRICULUM */
 
   .botonCurriculum {
@@ -473,6 +572,16 @@ textarea {
   .botonDescarga {
     margin: 2rem 4rem 0rem 4rem;
   }
+  /* CLASES PAGE - CONTACTO */
+
+  label {
+    font-size: 1.5rem;
+  }
+
+  input,select,textarea {
+    font-size: 1.2rem;
+  }
+
 }
 @media (min-width: 992px) {
   .txtFooter {
@@ -509,7 +618,7 @@ textarea {
     height: 50px;
   }
   .navgridbase {
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: 18% 1fr;
   }
   nav a {
     justify-content: center;
@@ -532,40 +641,27 @@ textarea {
   }
   /* CLASES PAGE - SOBRE MI */
   .gridSobreMi {
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
-  .contenidoIzq {
-    justify-self: flex-end;
+    margin-top: 0rem;
   }
   .contenidoDer {
-    justify-self: flex-start;
+    align-self: center;
   }
   .imgSobreMi {
-    width: 30rem;
-    height: 30rem;
-    border-radius: 2rem;
     margin: 2rem;
   }
   .txtSobreMi {
     margin-left: 2rem;
-    max-width: 70rem;
   }
   /* CLASES PAGE - PROYECTOS */
-  .flexProyectos {
-    align-items: center;
-  }
-  .card {
+ .card {
     width: 40rem;
     height: 40rem;
     border-radius: 4rem;
     margin: 1rem;
   }
-  .detalle-card h3, .detalle-card p {
-    margin: 2rem;
-    text-shadow: 1rem;
-  }
+
   /* CLASES PAGE - CURRICULUM */
+
   .curriculumFlex {
     margin: 1rem 5rem 1rem 5rem;
   }
@@ -583,33 +679,48 @@ textarea {
   .botonDescarga {
     margin: 2rem 2rem 0rem 2rem;
   }
+
   /* CLASES PAGE - CONTACTO */
   label {
     font-size: 1.6rem;
   }
-  .formulario {
-    margin: 3rem 4rem 3rem 4rem;
-    max-width: 720px;
-    min-width: 320px;
-    border-radius: 4rem;
+
+  input,select,textarea {
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.4rem;
   }
+
+  .formulario {
+    display: grid;
+    grid-template-areas:
+    "nombre celular"
+    "correo servicio"
+    "comentario comentario"
+    "check check"
+    "boton boton";
+    min-width: 40vw;
+  }
+  
   .itemForm {
     padding: 2rem 3rem 2rem 3rem;
     margin: 1rem;
-    width: 280px;
-    max-width: 280px;
-    min-width: 160px;
   }
-  .buttonForm {
-    border-radius: 1rem;
-    height: 3rem;
+
+  .checkInput{
+    grid-area: checkInput;
+    margin: 5px;
+    justify-self: flex-end;
   }
-  select {
-    border-radius: 0.5rem;
-    padding: 0.25rem;
+
+  .checkLabel{
+    grid-area: checkLabel;
+    justify-self: flex-start;
   }
-  input {
-    border-radius: 0.5rem;
-    padding: 0.3rem;
+
+  .checkForm{
+    display: grid;
+    grid-template-areas: "checkInput checkLabel";
   }
+
 }/*# sourceMappingURL=style.css.map */

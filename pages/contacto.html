@@ -64,13 +64,13 @@
                     </div>
                     <div class="itemForm comentarioForm">
                         <label for="comentario">Comentario</label>
-                        <textarea name="comentario" id="" cols="30" rows="10" style="resize:none; border-radius: 1rem; padding: 0.3rem;" placeholder="Si quieres agregar algo, escribe aquí."></textarea>
+                        <textarea name="comentario" id="comentario" cols="0" rows="10" style="resize:none; border-radius: 1rem; padding: 0.3rem;" placeholder="Si quieres agregar algo, escribe aquí."></textarea>
                     </div>
-                    <div  class="itemForm checkForm" style="flex-direction:row; width: 650px; max-width: 650px; min-width: 240px; justify-content: center;">
-                        <input type="checkbox" id="check" style="margin:0px 5px 0px 5px;" required checked>
-                        <label for="check" >Acepto ser comunicado atraves de estos datos</label>
+                    <div  class="itemForm checkForm">
+                        <label class="checkLabel" for="check" >Acepto ser comunicado atraves de estos datos</label>
+                        <input class="checkInput" type="checkbox" id="check" style="margin:0px 5px 0px 5px;" required checked>
                     </div>
-                    <div class="itemForm buttonFormArea" style="width: 650px; max-width: 650px;">
+                    <div class="itemForm buttonFormArea">
                         <input type="submit" value="Enviar" class="buttonForm">
                     </div>
                 </form>
