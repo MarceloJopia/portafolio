@@ -1,0 +1,136 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+  
+html {
+    font-size: 62.5%;
+}
+  
+body {
+    background-color: white;
+}
+  
+header {
+    background-color: $color1;
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 0px 3rem 0px $color2;
+    z-index: 999;
+}
+  
+main {
+    margin: none;
+}
+  
+footer {
+    padding: 1rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 90;
+}
+  
+.bi {
+    width: 30px;
+    height: 30px;
+}
+  
+.txtFooter {
+    font-size: 1.3rem;
+}
+  
+.redesFooter {
+    display: flex;
+    justify-content: center;
+}
+  
+h1 {
+    padding: 0.7rem;
+    font-size: 2.9rem;
+    margin: 1rem 0rem 0rem 1rem;
+    filter: drop-shadow(0.4rem 0.4rem 0.6rem $gris);
+}
+  
+h2 {
+    padding: 0.7rem;
+    font-size: 1.8rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+  
+h3 {
+    font-size: 1.3rem;
+}
+  
+h1,h2,h3,p,label,input,a{
+    font-family: $font;
+}
+  
+h1, h2, h3, p {
+    color: black;
+}
+  
+h1, h2, h3{
+    font-weight: bold;
+}
+  
+p {
+    font-size: 0.9rem;
+}
+  
+b {
+    color: $color1;
+  }
+  
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    margin: 0.8rem 1rem 1rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+nav{ 
+    ul{
+        li {
+            list-style-type: none;
+            font-size: 1.3rem;
+            padding-bottom: 0.2rem;
+            padding-top: 0.2rem;
+        }
+    }
+    a{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+    
+li{
+    a{
+        display: flex;
+        justify-content: flex-end;
+        justify-items: center;
+    }
+}
+  
+.icon {
+    height: 50px;
+    width: 50px;
+}
+  
+.navgridbase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+  
+.navgridlist {
+    display: grid;
+    grid-template-columns: 1fr;
+}
