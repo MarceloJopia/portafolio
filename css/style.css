@@ -141,8 +141,8 @@ li a {
 }
 
 .imgInicial {
-  max-width: 75vw;
   max-height: 75vh;
+  max-width: 75vw;
   filter: drop-shadow(0 0 1rem rgb(80, 168, 168));
   position: relative;
   z-index: 10;
@@ -181,8 +181,8 @@ li a {
 }
 
 .imgSobreMi {
-  width: 25rem;
   height: 25rem;
+  width: 25rem;
   border-radius: 0.8rem;
   margin: 0.2rem;
   position: relative;
@@ -216,8 +216,8 @@ li a {
 }
 
 .card {
-  width: 30rem;
   height: 30rem;
+  width: 30rem;
   border-radius: 2rem;
   margin: 0.2rem;
   position: relative;
@@ -387,8 +387,8 @@ select {
 
 @media (min-width: 576px) {
   .bi {
-    width: 40px;
     height: 40px;
+    width: 40px;
   }
   .txtFooter {
     font-size: 1.6rem;
@@ -430,8 +430,8 @@ select {
     margin-top: 2rem;
   }
   .imgSobreMi {
-    width: 35rem;
     height: 35rem;
+    width: 35rem;
     border-radius: 2rem;
     margin: 1rem;
   }
@@ -441,8 +441,8 @@ select {
   }
   /* CLASES PAGE - PROYECTOS */
   .card {
-    width: 25rem;
     height: 25rem;
+    width: 25rem;
   }
   /* CLASES PAGE - CURRICULUM */
   .botonCurriculum {
@@ -467,8 +467,8 @@ select {
 }
 @media (min-width: 768px) {
   .bi {
-    width: 45px;
     height: 45px;
+    width: 45px;
   }
   .txtFooter {
     font-size: 1.8rem;
@@ -522,8 +522,8 @@ select {
     align-self: flex-end;
   }
   .imgSobreMi {
-    width: 30rem;
     height: 30rem;
+    width: 30rem;
     border-radius: 2rem;
     margin: 1rem;
   }
@@ -533,8 +533,8 @@ select {
   }
   /* CLASES PAGE - PROYECTOS */
   .card {
-    width: 33rem;
     height: 33rem;
+    width: 33rem;
   }
   /* CLASES PAGE - CURRICULUM */
   .botonCurriculum {
@@ -584,8 +584,8 @@ select {
     width: 50px;
   }
   .bi {
-    width: 50px;
     height: 50px;
+    width: 50px;
   }
   .navgridbase {
     grid-template-columns: 18% 1fr;
@@ -601,8 +601,8 @@ select {
     grid-template-columns: 1fr 1fr;
   }
   .imgInicial {
-    max-width: 90vw;
     max-height: 90vh;
+    max-width: 90vw;
     display: flex;
     justify-content: flex-end;
   }
@@ -624,8 +624,8 @@ select {
   }
   /* CLASES PAGE - PROYECTOS */
   .card {
-    width: 40rem;
     height: 40rem;
+    width: 40rem;
     border-radius: 4rem;
     margin: 1rem;
   }
