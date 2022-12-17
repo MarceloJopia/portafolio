@@ -58,12 +58,12 @@ h1 {
 
 h2 {
   padding: 0.7rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin: 1rem 0rem 1rem 0rem;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 h1, h2, h3, p, label, input, a {
@@ -79,7 +79,7 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 b {
@@ -96,28 +96,20 @@ a {
   align-items: center;
 }
 
-nav ul li {
-  list-style-type: none;
-  font-size: 1.3rem;
-  padding-bottom: 0.2rem;
-  padding-top: 0.2rem;
-}
-nav a {
-  grid-area: logo;
-  display: flex;
-  justify-content: flex-start;
-}
-nav button {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  justify-content: center;
+.navbar-light .navbar-nav .nav-link {
+  color: white;
 }
 
-li a {
-  display: flex;
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link .dropdown-item {
+  color: white;
+}
+
+.navbar-collapse {
   justify-content: flex-end;
-  justify-items: center;
+}
+
+.navbar-nav {
+  align-items: flex-end;
 }
 
 .icon {
@@ -125,46 +117,20 @@ li a {
   width: 50px;
 }
 
-.navgridbase {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 3%;
-  margin-right: 3%;
-  grid-template-areas: "logo navbutton" ". list";
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
+  padding: 1.2rem;
 }
 
-.navgridlist {
-  grid-area: list;
-  display: grid;
-  grid-template-columns: 1fr;
-  height: 0;
-  opacity: 0%;
+.navbar-toggler {
+  border: 1px solid transparent;
+  color: white;
 }
 
-.navbutton {
-  grid-area: navbutton;
-  align-self: center;
-  justify-self: end;
-  width: 50px;
-  height: 50px;
-  border: none;
-  background-color: rgb(80, 168, 168);
-}
-
-button > div {
-  background-color: white;
-  height: 3px;
-  width: 100%;
-  border-radius: 3px;
-}
-
-.navbutton:focus + .navgridlist {
-  height: 100%;
-  opacity: 100%;
-}
-
-.navbutton:focus {
-  opacity: 0%;
+.navbar-light .navbar-toggler-icon {
+  filter: brightness(0);
+  filter: invert(1);
 }
 
 /* CLASES HOME */
@@ -437,12 +403,6 @@ select {
   h2 {
     font-size: 2.1rem;
     margin: 1rem 0rem 1rem 0rem;
-  }
-  h3 {
-    font-size: 1.4rem;
-  }
-  p {
-    font-size: 1rem;
   }
   nav ul li {
     font-size: 1.5rem;

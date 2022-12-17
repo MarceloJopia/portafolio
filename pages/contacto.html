@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Si ten interesa ponerte en contacto conmigo en alguna de las areas en la que me desempeño te invito a ponerte en contacto a travez de mi formulario de contacto">
-    <meta name="keywords" content="contacto crea un sitio web diseño diseñador industrial desarrollador web frontend chile chileno">
+    <meta name="keywords" content="contacto, crea un sitio web, diseño, diseñador industrial, desarrollador web, desarrollador frontend, chile, chileno">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,32 +16,34 @@
 </head>
 <body>
     <header>
-        <nav class="navgridbase">
-            <a href="../index.html">
-                <img src="../assets/img/logo-blanco.png" class="icon" alt="logo">
-            </a>
-            <button class="navbutton" alt="abrir menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            <ul class="navgridlist">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./sobre-mi.html">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="./proyectos.html">Proyectos</a>
-                </li>
-                <li>
-                    <a href="./curriculum.html">Curriculum</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand icon" href="#">
+                    <img src="../assets/img/logo-blanco.png" class="icon" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre-mi.html">Sobre Mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./curriculum.html">Curriculum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -58,11 +60,11 @@
                         <input type="tel" id="numeroCelular" placeholder="Ejemplo: +56900000000" required>
                     </div>
                     <div class="itemForm correoForm">
-                        <label for="email">Correo Electronico</label>
+                        <label for="email">Correo Electrónico</label>
                         <input type="email" id="email" placeholder="Ejemplo: mail@mail.com" required>
                     </div>
                     <div class="itemForm servicioForm">
-                        <label for="area">Servicio de Interes</label>
+                        <label for="area">Servicio de Interés</label>
                         <select name="area" id="area">
                             <option value="desarrolloFrontEnd">Desarrollo Frontend</option>
                             <option value="diseñoIndustrial">Diseño Industrial</option>
@@ -74,7 +76,7 @@
                         <textarea name="comentario" id="comentario" cols="0" rows="10" style="resize:none; border-radius: 1rem; padding: 0.3rem;" placeholder="Si quieres agregar algo, escribe aquí."></textarea>
                     </div>
                     <div  class="itemForm checkForm">
-                        <label class="checkLabel" for="check" >Acepto ser comunicado atraves de estos datos</label>
+                        <label class="checkLabel" for="check" >Acepto ser comunicado a través de estos datos</label>
                         <input class="checkInput" type="checkbox" id="check" style="margin:0px 5px 0px 5px;" required checked>
                     </div>
                     <div class="itemForm buttonFormArea">
@@ -87,7 +89,7 @@
     </main>
     <footer>
         <div style="margin-top: 1rem;">
-            <p class="txtFooter" style="text-align: center;"><b style="color: white;">Sigueme en mis redes sociales</b></p>
+            <p class="txtFooter" style="text-align: center;"><b style="color: white;">Sígueme en mis redes sociales</b></p>
             <div class="redesFooter">
                 <a href="https://www.instagram.com/chelonganiza/" target="_blank" alt="instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
